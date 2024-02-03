@@ -1,0 +1,302 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .new-list-item{
+    cursor: pointer;
+  }
+  .sidebar {
+    background-color: #dddddd; /* Adjust color to match your design */
+    padding: 10px;
+    width: 250px; /* Adjust width as needed */
+    height: 100vh;
+  }
+
+  h3.content-heading{
+    padding-left: 50px;
+    font-size: 40px;
+    font-weight: normal;
+    color: white;
+  }
+
+  #task-name-input{
+    position: relative;
+    width: 70%;
+    height: 30px;
+    bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* display: flex;
+    text-align: center; */
+    margin-left: 10%;
+  
+  }
+
+  ul{
+    list-style: none;
+    font-size: 20px;
+  }
+  li{
+    background-color: white;
+    padding: 10px;
+    width: 900px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+   
+  }
+
+  .strikethrough {
+    text-decoration: line-through;
+}
+  .member-id{
+    visibility: hidden;
+  }
+
+  .list-tasks{
+    display: flex;
+    flex-direction: column;
+  }
+  .delete-icon{
+    padding-left: 90px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    visibility: hidden;
+  }
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .new-list-item:hover .delete-icon {
+    visibility: visible;
+}
+  
+  .task-counter{
+    padding-left: 15px;
+  }
+  .profile-img {
+    width: 60px; /* Adjust the size to fit your layout */
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px; /* Space between image and text */
+  }
+  
+  .member-email{
+    visibility: hidden;
+  }
+  .sidebar-member-name{
+    font-size: medium;
+    margin-bottom: 0;
+  }
+  .sidebar-member-email {
+    color: #333;
+    margin: 5px 0;
+    font-size: smaller;
+
+  }
+  
+  .star-icon{
+    padding-right: 15px;
+  }
+  #project-members-field{
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  .main-content {
+    flex: 1;
+    background-color: #ffcccc;
+    padding: 20px;
+  }
+
+  .to-do-list-content {
+    flex: 1;
+    background-color: #CBC3E3;
+    padding: 20px;
+  }
+  
+  .header {
+    font-size: 24px;
+    color: #ff66b2; /* Adjust color to match your design */
+    margin-bottom: 80px;
+    font-weight: bolder;
+    font-size: xx-large;
+    padding-left: 50px;
+  }
+  
+  
+  .member-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  
+  .member-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .member-image {
+    width: 60px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 60px;
+  }
+  
+  .member-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .member-name {
+    font-weight: bold;
+  }
+  
+  .member-details {
+    color: #555;
+  }
+
+  .add-new {
+    position: absolute;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+    width: 250px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+
+  .new-task{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    background-color: white;
+    justify-content: center;
+    bottom: 50%;
+    left: 750px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
+  #task-heading{
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    background-color: lightgray;
+    padding: 20px; 
+  
+   
+  }
+
+
+  #input-box{
+    width: 900px;
+    height: 50px;
+    border-radius: 5px;
+    position:absolute;
+    border: none;
+    top: 700px;
+    right: 400px;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  #task-name-input{
+    position: relative;
+    width: 70%;
+    height: 30px;
+    bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* display: flex;
+    text-align: center; */
+    margin-left: 10%;
+
+  }
+
+  .new-task-btns{
+    padding-top: 10px;
+    position: relative;
+    left: 200px;
+    bottom: 10px;
+  }
+
+  #create-btn{
+    border-radius: 5px;
+  }
+
+  #cancel-btn{
+    border-radius: 5px;
+  }
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Button to save the new list */
+  #save-list {
+    /* Style as you prefer */
+  }
+
+  .end{
+    border: 1px solid black;
+  }
+
+ 
+ 
+  
+  

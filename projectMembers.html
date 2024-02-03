@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Project Members</title>
+<script src="jquery-3.7.1.js"></script>
+<script src="projectMembers.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <img src="images/member1.jpeg" alt="Profile" class="profile-img"> <!-- Set the default profile image -->
+      <div class="sidebar-member-info">
+        <h2 class="sidebar-member-name">Member Name</h2>
+        <p class="sidebar-member-email">Member Email</p>
+      </div>  
+    </div>
+
+    <h3 id="project-members-field">&#9733;   Project Members</h3>
+    <div class="list-tasks"></div>  
+
+      <h3 class="add-new">&#43; New List</h3>
+
+  
+  </div>
+
+  <div class="main-content">
+    <div class="header">
+      <span class="star-icon">&#9733;</span> Project Members
+    </div>
+    <div class="member-list">
+      <!-- Repeat this block for each member -->
+      <div class="member-container">
+        <img src="images/member1.jpeg" alt="Member photo" class="member-image">
+        <div class="member-info">
+          <div class="member-name">Hamna Chohan</div>
+          <div class="member-details">Section 1</div>
+          <div class="member-details">22001521</div>
+          <div class="member-email">hamna.chohan@ug.bilkent.edu.tr</div>
+          <div class="member-id">1</div>
+        </div>
+      </div>
+      <div class="member-container">
+        <img src="images/member2.jpeg" alt="Member photo" class="member-image">
+        <div class="member-info">
+          <div class="member-name">Aysegul Akpinarli</div>
+          <div class="member-details">Section 1</div>
+          <div class="member-details">22003564</div>
+          <div class="member-email">aysegul.akpinarli@ug.bilkent.edu.tr</div>
+          <div class="member-id">2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="new-task">
+      <h3 id="task-heading">New Task Name</h3>
+    
+   
+      <input id="task-name-input" type="text">
+      <div class="new-task-btns">
+        <button id="create-btn">Create</button>
+        <button id="cancel-btn">Cancel</button>
+      
+      </div>
+     
+    
+    
+  </div>
+
+  <div class="to-do-list-content">
+    <h3 class="content-heading"></h3>
+
+
+    <ul id="list-container">
+    </ul>
+
+     <div class="row">
+      
+      <input type="text" id="input-box" placeholder="+ Add New Task">
+
+    </div> 
+
+
+</div>
+</div>
+
+
+</body>
+</html>
